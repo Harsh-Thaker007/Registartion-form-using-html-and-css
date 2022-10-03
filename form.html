@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    input[type=text],input[type=email],input[type=tel],input[type=password]{
+        width: 25%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border: 2px solid red;
+        background-color: aqua;
+        color: white;
+    }
+    textarea{
+        width: 100px;
+        height: auto;
+        padding: 10px 20px;
+        resize: none;
+        color: black;
+        background-color: wheat;
+    }
+    select{
+        width: 100px;
+        padding: 10px 20px;
+        color: black;
+        background-color: wheat;
+    }
+
+    input[list=city], input[list=browser] {
+     background-color: wheat;
+     color: black;
+     padding: 10px 10px;
+      }
+
+
+    input[type=submit], input[type=reset] {
+     background-color: green;
+     border: none;
+     color: white;
+     padding: 16px 32px;
+      }
+
+        input[type=number],input[type=date]{
+        padding: 10px 20px;
+        margin: 10px 10px;
+        background-color: wheat;
+        color: black;
+    }
+    input[type=radio],input[type=checkbox]{
+        padding: 10px 20px;
+        margin: 10px 10px;
+    }
+
+
+
+</style>
+<body>
+    <form>
+        <fieldset>
+        <legend>PERSONAL INFORMATION</legend><br>
+        First Name:<input type="text" name="fname" placeholder="First name" required ><br><br>
+        Last Name:<input type="text" name="lname" placeholder="Last name" required><br><br>
+        Email:<input type="email" name="email" placeholder="xyz@.com" required><br><br>
+        Number:<input type="tel" name="phnumber" placeholder="Number" maxlength="10"><br><br>
+        Password:<input type="password" name="password" placeholder="password"required><br><br>
+    
+        Hobby:<input type="radio" name="cricket" value="cricket">cricket
+             <input type="radio" name="cricket" value="cricket">basketball
+             <input type="radio" name="cricket" value="cricket">baseball
+             <input type="radio" name="cricket" value="cricket">volleyball<br><br> 
+
+        Gender:<input type="checkbox" name="male" value="Male">male
+               <input type="checkbox" name="Female" value="Female">Female  
+               <input type="checkbox" name="other" value="other">others<br><br>
+
+        Select : <select name="cars">
+                <option value="nano">Nano</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                </select> <br><br>
+
+        comment : <textarea name="comment" rows="5" cols="30"></textarea><br><br>
+
+        
+        Select city : <input list="city" name="city">
+        <datalist id="city">
+            <option value="Pune">
+            <option value="Ahmedabad">
+            <option value="cehnnai"> 
+            <option value="delhi">
+            <option value="mumbai">
+        </datalist> <br><br>
+
+        Select browser : <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="google">
+            <option value="microsoft">
+            <option value="brave"> 
+            <option value="Opera">
+            <option value="firefox">
+        </datalist> <br><br>
+
+        Color : <input type="color" name="color" value="#0000FF"> <br><br>
+
+        Date : <input type="date" name="date"> <br><br>
+
+        Quantity : <input type="number" name="quantity" min="0" max="1000" value="5" step="10"><br><br>
+
+        Upload File : <input type="file" name="document" multiple>
+
+        <br><br>
+        <input type="submit" value="Save">
+        <input type="reset" value="Reset Data">
+    </fieldset> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;  
+        text-align: center;
+        margin: auto;
+        padding: 100px;
+        color: darkblue;
+        box-sizing: border-box;
+    }
+    input[type=text],input[type=email],input[type=password]{
+        width: auto;
+        padding: 12px 20px;
+        margin: 8px;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+    }
+    input[type=button]{
+        width: auto;
+        color: black;
+        background-color: yellow;
+        border: none;
+        padding: 12px;
+        margin: auto;
+        cursor: pointer;
+    }
+    input[type=reset]{
+        width: auto;
+        color: black;
+        background-color:red;
+        border: none;
+        padding: 12px;
+        margin: auto;
+        cursor: pointer;
+    }
+    input[type=submit]{
+        width: auto;
+        color: black;
+        background-color:green;
+        border: none;
+        padding: 12px;
+        margin: auto;
+        cursor: pointer;
+    }
+    .img{
+        background-image: url(login.jpg);
+        background-size: cover;
+    }
+    .modal-content {
+  background-color: whitesmoke;
+  margin: auto; 
+  border: 1px solid red;
+  width: 25%; 
+}
+
+</style>
+<body class="img">
+    <form class="modal-content">
+    <h1>WELCOME, PLEASE SIGN IN</h1>
+    Name<input type="text" name="fname" placeholder="First and last name"></a><br><br>
+    password<input type="password" name="password" placeholder="password"><br><br>
+    Email<input type="email" name="email" placeholder="xyz@gmail.com"><br><br>
+
+    <input type="checkbox" name="remember"> remember me
+
+    <h5>New registration then sign up</h5>
+    <a href="D:\Task\Form_task\form.html">
+    <input type="button"  value="sign up">
+    </a>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+    </form>
+</body>
+</html>
